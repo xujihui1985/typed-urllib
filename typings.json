@@ -9,5 +9,8 @@
   },
   "ambientDependencies": {
     "node": "registry:dt/node#4.0.0+20160319033040"
+  },
+  "dependencies": {
+    "domready": "registry:npm/domready#1.0.8+20160211010015"
   }
 }
