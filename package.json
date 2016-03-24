@@ -1,6 +1,6 @@
 {
   "name": "typed-urllib",
-  "version": "2.8.0",
+  "version": "0.1.0",
   "scripts": {
     "watch": "onchange '**/*.d.ts' -e 'out/**' -- npm run build",
     "build": "typings bundle --ambient -o out",
