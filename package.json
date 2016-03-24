@@ -1,6 +1,6 @@
 {
-  "name": "typed-urllib",
-  "version": "0.1.0",
+  "name": "@alipay/typed-urllib",
+  "version": "0.1.1",
   "scripts": {
     "watch": "onchange '**/*.d.ts' -e 'out/**' -- npm run build",
     "build": "typings bundle --ambient -o out",
@@ -15,5 +15,8 @@
     "tslint-config-typings": "^0.1.2",
     "typescript": "^1.8.9",
     "typings": "^0.7.9"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
   }
 }

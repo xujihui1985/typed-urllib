@@ -7,7 +7,7 @@ declare module 'urllib' {
 
     type HttpMethod = "GET" | "POST" | "DELETE" | "PUT"
 
-    export interface RequestOptions {
+    interface RequestOptions {
       method: HttpMethod,
       data?: Object,
       content?: string|Buffer,
@@ -36,7 +36,7 @@ declare module 'urllib' {
       gzip?: boolean
     }
 
-    export interface Response{
+    interface Response {
       data: Object,
       status: number,
       headers: Object,
@@ -53,7 +53,7 @@ declare module 'urllib' {
 
     export function request(url: string, callback: (err: Error, data: Buffer | any, res: http.IncomingMessage)=>void ): http.ClientRequest
     export function request(url: string, options: RequestOptions, callback: (err: Error, data: Buffer|any, res: http.IncomingMessage)=>void ): http.ClientRequest
-    export function create()
+    export function create(): HttpClient
     export function requestThunk(url: string, args: RequestOptions): (error: Error, res: Response)=>void
 
 }
